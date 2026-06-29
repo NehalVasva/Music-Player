@@ -1,0 +1,105 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: url("bg-photo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    font-family: Arial, sans-serif;
+}
+
+.player{
+    width: 400px;
+    padding: 20px;
+    border-radius: 20px;
+
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(10px);
+
+    color: white;
+    text-align: center;
+
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.song-info{
+    margin:20px 0;
+}
+
+#title{
+    margin-bottom:5px;
+}
+
+#progress{
+    width:100%;
+    margin:15px 0;
+    cursor:pointer;
+}
+
+.controls{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin:15px 0;
+}
+
+.controls button{
+    padding:10px 15px;
+    font-size:20px;
+    border:none;
+    border-radius:50%;
+    cursor:pointer;
+    background:#ff5722;
+    color:white;
+}
+
+.controls button:hover{
+    background:#e64a19;
+}
+
+.time{
+    display:flex;
+    justify-content:space-between;
+    font-size:14px;
+}
+
+.volume{
+    margin:15px 0;
+}
+
+.volume input{
+    width:70%;
+}
+
+#playlist{
+    list-style:none;
+    margin-top:10px;
+    text-align:left;
+}
+
+#playlist li{
+    padding:8px;
+    cursor:pointer;
+    border-bottom:1px solid #333;
+}
+
+#playlist li:hover{
+    background:#333;
+}
+
+.active{
+    background:#ff5722;
+}
